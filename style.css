@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap");
+
+/* font-family: "Roboto Slab", serif;
+font-family: "Poppins", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  background-color: #062c14ca;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  padding: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+.header {
+  padding: 15px 0;
+}
+.logo {
+  margin: 0 auto;
+}
+
+.logo p {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+}
+
+.icon {
+  display: flex;
+}
+.icon i {
+  padding: 0 15px;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+}
+
+aside {
+  flex: 0 0 20vw;
+  background: #c89daa;
+  padding: 0 10px;
+}
+
+aside img {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+aside ul li a {
+  text-transform: capitalize;
+  color: #062c14ca;
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  padding: 10px 0;
+}
+article {
+  padding: 0 10px;
+}
+article h2 {
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+article h3 {
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.items {
+  display: flex;
+  gap: 2%;
+  margin-top: 20px;
+}
+
+.items .item {
+  flex-basis: 32%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+.items .item img {
+  width: 100%;
+}
+
+.items .item h4 {
+  text-transform: capitalize;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.items .item p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.items .read {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 10px;
+  display: block;
+}
+
+.items .item a {
+  text-transform: capitalize;
+  padding: 5px 10px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.items .item a:hover  {
+  border: 1px solid #000;
+  background-color: #eee;
+  color: #000;
+}
+
+footer {
+  background: #062c14ca;
+}
+footer p {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+}
+
+@media  screen and (max-width:920px) {
+  .items {
+    flex-wrap: wrap;
+  }
+  .items .item {
+    flex-basis: 48%;
+  }
+}
+@media  screen and (max-width:720px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .logo {
+    order: -1;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main article {
+    order: -1;
+  }
+  .items {
+    flex-wrap: wrap;
+  }
+  .items .item {
+    flex-basis: 100%;
+  }
+  aside ul li a {
+    text-align: center;
+  }
+}
